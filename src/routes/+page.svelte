@@ -15,12 +15,18 @@
     >
         <source src="https://i.imgur.com/AAq8AGQ.mp4" />
     </video>
-    <Typewriter>
+    <Typewriter mode="cascade" on:done={{"unwrite"}}>
         <h1
-            class="font-alex text-center z-10 inset-0 absolute text-4xl flex justify-center m-0 translate-y-1/4 top-64"
+            class="font-peralta text-center z-10 inset-0 absolute text-8xl flex justify-center m-0 translate-y-1/4 top-64"
         >
-            Alex Ionitel's Home Page on the Internet
+            Engineer
         </h1>
+        <h1
+            class="font-peralta text-center z-10 inset-0 absolute text-8xl flex justify-center m-0 translate-y-1/4 top-64"
+        >
+            Developer
+        </h1>
+        v
     </Typewriter>
     <div
         class="z-10 inset-0 absolute flex justify-center mx-auto text-7xl hover:cursor-pointer top-3/4 h-12"
