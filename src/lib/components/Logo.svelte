@@ -13,7 +13,7 @@
 </script>
 
 <div
-    class="flex justify-end top-2 z-[999] sticky"
+    class="flex justify-end top-2 z-[999] sticky hover:cursor-pointer"
     on:mousedown={handleLogoClick}
 >
     <div
