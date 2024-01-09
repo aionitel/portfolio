@@ -6,9 +6,16 @@
     function toggleHover() {
         isHovered = !isHovered;
     }
+
+    function handleLogoClick() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
 </script>
 
-<div class="flex justify-end left-0 top-0 z-[999] sticky">
+<div
+    class="flex justify-end top-2 z-[999] sticky"
+    on:mousedown={handleLogoClick}
+>
     <div
         on:mouseenter={toggleHover}
         on:mouseleave={toggleHover}
