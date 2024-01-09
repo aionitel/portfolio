@@ -14,6 +14,11 @@
         loop
         playsInline
     />
+    <h1
+        class="absolute text-white top-1/2 font-peralta text-5xl text-center shadow-xl"
+    >
+        Alex Ionitel's Homepage on the Interwebs
+    </h1>
     <button
         class="absolute flex justify-center mx-auto hover:cursor-pointer top-3/4 h-12"
         on:click={() =>
