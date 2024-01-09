@@ -1,5 +1,6 @@
 <script lang="ts">
     import Typewriter from "svelte-typewriter";
+    import { cascade } from "svelte-typewriter";
 </script>
 
 <svelte:head>
@@ -15,7 +16,7 @@
     >
         <source src="https://i.imgur.com/AAq8AGQ.mp4" />
     </video>
-    <Typewriter mode="cascade" on:done={{"unwrite"}}>
+    <Typewriter mode="cascade">
         <h1
             class="font-peralta text-center z-10 inset-0 absolute text-8xl flex justify-center m-0 translate-y-1/4 top-64"
         >
