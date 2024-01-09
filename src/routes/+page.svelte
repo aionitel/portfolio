@@ -1,6 +1,5 @@
 <script lang="ts">
-    import Typewriter from "svelte-typewriter";
-    import { cascade } from "svelte-typewriter";
+    import BgVideo from "$lib/assets/bg.mp4";
 </script>
 
 <svelte:head>
@@ -14,7 +13,7 @@
         loop
         playsInline
     >
-        <source src="https://i.imgur.com/AAq8AGQ.mp4" />
+        <source src={BgVideo} />
     </video>
     <div
         class="z-10 inset-0 absolute flex justify-center mx-auto text-7xl hover:cursor-pointer top-3/4 h-12"
