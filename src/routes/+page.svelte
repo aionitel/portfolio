@@ -15,7 +15,7 @@
         playsInline
     />
     <h1
-        class="absolute text-white top-1/2 font-peralta text-5xl text-center shadow-xl"
+        class="absolute text-white top-1/2 font-peralta text-5xl text-center shadow-xl font-inconsolata"
     >
         Alex Ionitel's Homepage on the Interwebs
     </h1>
