@@ -16,19 +16,6 @@
     >
         <source src="https://i.imgur.com/AAq8AGQ.mp4" />
     </video>
-    <Typewriter mode="cascade">
-        <h1
-            class="font-peralta text-center z-10 inset-0 absolute text-8xl flex justify-center m-0 translate-y-1/4 top-64"
-        >
-            Engineer
-        </h1>
-        <h1
-            class="font-peralta text-center z-10 inset-0 absolute text-8xl flex justify-center m-0 translate-y-1/4 top-64"
-        >
-            Developer
-        </h1>
-        v
-    </Typewriter>
     <div
         class="z-10 inset-0 absolute flex justify-center mx-auto text-7xl hover:cursor-pointer top-3/4 h-12"
         on:click={() =>
@@ -41,3 +28,4 @@
         />
     </div>
 </div>
+<div class="bg-white h-screen" />
