@@ -5,6 +5,8 @@
 <svelte:head>
     <title>Alex Ionitel</title>
 </svelte:head>
+
+<!-- Start Section -->
 <div class="flex justify-center overflow-hidden relative h-screen">
     <video
         src={BgVideo}
@@ -15,7 +17,7 @@
         playsInline
     />
     <h1
-        class="absolute text-white top-1/2 font-peralta text-5xl text-center shadow-xl font-inconsolata"
+        class="absolute text-white top-1/3 sm:top-1/2 font-peralta sm:text-6xl text-5xl text-center shadow-xl font-inconsolata"
     >
         Alex Ionitel's Homepage on the Interwebs
     </h1>
@@ -32,4 +34,3 @@
         />
     </button>
 </div>
-<div class="bg-white h-screen" />
