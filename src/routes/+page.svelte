@@ -1,7 +1,3 @@
-<script lang="ts">
-    import BgVideo from "$lib/assets/bg.mp4";
-</script>
-
 <svelte:head>
     <title>Alex Ionitel</title>
 </svelte:head>
@@ -9,22 +5,25 @@
 <!-- Start Section -->
 <div class="flex justify-center overflow-hidden relative h-screen">
     <video
-        src={BgVideo}
-        class="flex h-full w-full object-cover"
+        src="https://i.imgur.com/6ArY0RA.mp4"
+        class="flex h-full w-full object-cover top-0 left-0 z-[-1] fixed"
         autoPlay
         muted
         loop
         playsInline
     />
     <h1
-        class="absolute text-white top-1/3 sm:top-1/2 font-peralta sm:text-6xl text-5xl text-center shadow-xl font-inconsolata"
+        class="fixed text-white top-1/3 sm:top-1/2 font-peralta sm:text-6xl text-5xl text-center font-inconsolata"
     >
         Alex Ionitel's Homepage on the Interwebs
     </h1>
     <button
-        class="absolute flex justify-center mx-auto hover:cursor-pointer top-3/4 h-12"
+        class="flex justify-center mx-auto hover:cursor-pointer top-3/4 h-12 fixed"
         on:click={() =>
-            window.scrollTo({ top: screen.height, behavior: "smooth" })}
+            window.scrollTo({
+                top: screen.height,
+                behavior: "smooth",
+            })}
     >
         <img
             src="https://cdn-icons-png.flaticon.com/512/271/271228.png"
@@ -34,3 +33,6 @@
         />
     </button>
 </div>
+
+<!-- Sub Section -->
+<div class="h-screen bg-white flex justify-between"></div>
