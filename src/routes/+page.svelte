@@ -1,3 +1,7 @@
+<script lang="ts">
+    import Typewriter from "svelte-typewriter";
+</script>
+
 <svelte:head>
     <title>Alex Ionitel</title>
 </svelte:head>
@@ -12,11 +16,15 @@
         loop
         playsInline
     />
-    <h1
-        class="fixed text-white top-1/3 sm:top-1/2 font-peralta sm:text-6xl text-5xl text-center font-inconsolata"
-    >
-        Alex Ionitel's Homepage on the Interwebs
-    </h1>
+    <Typewriter mode="loop">
+        <div
+            class="text-white h-screen flex items-center font-peralta text-7xl font-inconsolata"
+        >
+            <h1>Programming Enthusiast.</h1>
+            <h1>Software Engineer.</h1>
+            <h1>Hacker?</h1>
+        </div>
+    </Typewriter>
     <button
         class="flex justify-center mx-auto hover:cursor-pointer top-3/4 h-12 fixed"
         on:click={() =>
@@ -34,5 +42,4 @@
     </button>
 </div>
 
-<!-- Sub Section -->
-<div class="h-screen bg-white flex justify-between"></div>
+<!-- About Section -->
