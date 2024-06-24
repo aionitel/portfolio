@@ -16,15 +16,17 @@
         loop
         playsInline
     />
-    <Typewriter mode="loop">
-        <div
-            class="text-white h-screen flex items-center font-peralta text-7xl font-inconsolata"
-        >
-            <h1>Programming Enthusiast.</h1>
-            <h1>Software Engineer.</h1>
-            <h1>Hacker?</h1>
-        </div>
-    </Typewriter>
+    <div class="fixed">
+        <Typewriter mode="loop">
+            <div
+                class="text-white h-screen flex items-center font-peralta text-7xl font-inconsolata"
+            >
+                <h1>Programming Enthusiast.</h1>
+                <h1>Software Engineer.</h1>
+                <h1>Hacker?</h1>
+            </div>
+        </Typewriter>
+    </div>
     <button
         class="flex justify-center mx-auto hover:cursor-pointer top-3/4 h-12 fixed"
         on:click={() =>
@@ -43,9 +45,11 @@
 </div>
 
 <!-- About Section -->
-<div class="h-screen bg-white mx-auto w-2/3">
-    <h1 class="font-bold text-6xl">about</h1>
-    <p class="font-inconsolata">
-        Hi there! I am a programmer based out of Canada!
-    </p>
+<div class="h-screen bg-white relative">
+    <div class="mx-auto w-2/3">
+        <h1 class="font-bold text-6xl">about</h1>
+        <p class="font-inconsolata">
+            Hi there! I am a programmer based out of Canada!
+        </p>
+    </div>
 </div>
