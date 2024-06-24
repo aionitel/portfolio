@@ -43,3 +43,9 @@
 </div>
 
 <!-- About Section -->
+<div class="h-screen bg-white mx-auto w-2/3">
+    <h1 class="font-bold text-6xl">about</h1>
+    <p class="font-inconsolata">
+        Hi there! I am a programmer based out of Canada!
+    </p>
+</div>
