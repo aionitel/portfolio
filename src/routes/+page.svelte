@@ -2,22 +2,13 @@
     import Typewriter from "svelte-typewriter";
     import { fade } from "svelte/transition";
     import { inview } from "svelte-inview";
-    import type {
-        ObserverEventDetails,
-        ScrollDirection,
-        Options,
-    } from "svelte-inview";
 
-    let isInView: boolean = false;
-    const options: Options = {
-        rootMargin: "-50px",
-        unobserveOnEnter: true,
-    };
+    let isInView: boolean;
+    const options: Options = {};
 
-    const handleChange = () => {
-        isInView = !isInView;
-        console.log(isInView);
-    };
+    if (isInView) {
+        console.log("About text is in view!");
+    }
 </script>
 
 <svelte:head>
@@ -84,12 +75,52 @@
 </div>
 
 <!-- Work Section -->
-<div class="flex w-screen h-screen relative">
-    <div class="flex-row justify-between bg-black">
-        <h1 class="font-bold text-white">work</h1>
-    </div>
-    <div class="flex-row justify-between bg-black w-1/2"></div>
-    <div class="bg-white w-1/2">
-        <h1 class="font-bold text-black">test</h1>
+<div class="bg-white relative">
+    <div class="mx-auto md:w-1/2 w-2/3 pt-10">
+        <h1 class="font-bold text-6xl">skills</h1>
+        <div class="font-inconsolata flex justify-between">
+            <div>
+                <h2 class="mb-2">Languages:</h2>
+                <p>
+                    · English <br />
+                    · Russian <br />
+                    · Javascript/Typescript <br />
+                    · HTML + CSS <br />
+                    · Python <br />
+                    · Go (Golang) <br />
+                    · Rust <br />
+                    · SQL (Structured Query Language) <br />
+                    · JSON (Javascript Object Notation) <br />
+                </p>
+            </div>
+            <div>
+                <h2 class="mb-2">frontend</h2>
+                <p>
+                    · React <br />
+                    · React Native <br />
+                    · Redux <br />
+                    · Svelte <br />
+                    · NextJS <br />
+                    · Vite <br />
+                    · Webpack <br />
+                    · Bootstrap <br />
+                    · Tailwind CSS <br />
+                    · SCSS <br />
+                    · Figma <br />
+                </p>
+            </div>
+            <div>
+                <h2 class="mb-2">backend</h2>
+                <p>
+                    · NodeJS <br />
+                    · Express <br />
+                    · MySQL + PostgreSQL <br />
+                    · Actix Web (Rust) <br />
+                    · MongoDB <br />
+                    · Redis <br />
+                    · Stripe (Payments) <br />
+                </p>
+            </div>
+        </div>
     </div>
 </div>
