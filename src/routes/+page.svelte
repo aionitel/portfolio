@@ -1,5 +1,6 @@
 <script lang="ts">
     import Typewriter from "svelte-typewriter";
+    import TechCarousel from "$lib/components/TechCarousel.svelte";
     import { fade } from "svelte/transition";
     import { inview } from "svelte-inview";
 
@@ -80,7 +81,7 @@
         <h1 class="font-bold text-6xl">skills</h1>
         <div class="font-inconsolata flex justify-between">
             <div>
-                <h2 class="mb-2">Languages:</h2>
+                <h2 class="mb-2">languages</h2>
                 <p>
                     · English <br />
                     · Russian <br />
@@ -123,4 +124,10 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- Tech Section -->
+<div class="bg-white">
+    <h1 class="text-6xl font-bold mx-auto w-1/2">tools i work with</h1>
+    <TechCarousel />
 </div>

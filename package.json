@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"siema": "^1.5.1",
 		"svelte-inview": "^4.0.2"
 	}
 }
