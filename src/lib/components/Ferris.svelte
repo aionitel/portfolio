@@ -54,7 +54,7 @@
         id="ferris-image"
         class="object-cover"
     />
-    <div id="eyes" class="flex absolute top-[60px] left-[75px] object-cover">
+    <div id="eyes" class="flex absolute top-14 left-16 object-cover">
         <img src={eye} class="eye" width={eyeSize} height={eyeSize} />
         <img src={eye} class="eye" width={eyeSize} height={eyeSize} />
     </div>

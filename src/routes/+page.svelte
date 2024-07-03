@@ -128,6 +128,6 @@
 </div>
 
 <!-- Tech Section -->
-<div class="bg-white relative flex justify-center">
-    <Ferris />
+<div class="bg-white relative">
+    <TechCarousel />
 </div>

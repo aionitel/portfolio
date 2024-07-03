@@ -1,5 +1,6 @@
 <script lang="ts">
     import Carousel from "./Carousel.svelte";
+    import Ferris from "$lib/components/Ferris.svelte";
 
     const images: string[] = [
         "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1&ipt=fe5653cf5986423db67a53f42299bfa5cf551cee2062aa2120e4afbd02cdd2cb&ipo=images",
@@ -16,7 +17,6 @@
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg2.storyblok.com%2F600x0%2Ff%2F82408%2F301x301%2Fab47eaa34f%2Fapollo.png&f=1&nofb=1&ipt=98ca8f61369b52f5bf332bbe912e03628798ca70135eed4e570a260f5fb8a6e8&ipo=images",
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F62c48bbdd884e8c372162223.png&f=1&nofb=1&ipt=ec784a0eda308e74eeaf179593965cea0d4a02f2f21f289af701c8d67a15c0e1&ipo=images",
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2uusema5elisf.cloudfront.net%2Fbooks%2Ffullstack-rust%2Fimages%2Factix_logo.png&f=1&nofb=1&ipt=21ca73c0e002fdc83463381e675fa6c73129eb5280e6e6f0bc9e837ef21d65c6&ipo=images",
-        "https://rustacean.net/assets/rustacean-flat-noshadow.png",
     ].sort(() => Math.random() - 0.5); // Shuffle images on load for random order.
 
     const size: number = 100;
@@ -24,6 +24,7 @@
 
 <div>
     <Carousel autoplay={2000}>
+        <Ferris />
         {#each images as image}
             <img src={image} height={size} width={size} alt="carousel-item" />
         {/each}
