@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Ferris from "$lib/components/Ferris.svelte";
     import Typewriter from "svelte-typewriter";
     import TechCarousel from "$lib/components/TechCarousel.svelte";
     import { fade } from "svelte/transition";
@@ -34,7 +35,7 @@
                 <h1>Programming Enthusiast.</h1>
                 <h1>Embedded Developer.</h1>
                 <h1>Software Engineer.</h1>
-                <h1>Aspiring Game Developer</h1>
+                <h1>Aspiring Game Developer.</h1>
                 <h1>Hacker?</h1>
             </div>
         </Typewriter>
@@ -127,7 +128,6 @@
 </div>
 
 <!-- Tech Section -->
-<div class="bg-white">
-    <h1 class="text-6xl font-bold mx-auto w-1/2">tools i work with</h1>
-    <TechCarousel />
+<div class="bg-white relative flex justify-center">
+    <Ferris />
 </div>
